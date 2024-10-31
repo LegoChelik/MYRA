@@ -7,6 +7,14 @@
 // @icon         https://i.imgur.com/rYfrwQn.png
 // ==/UserScript==
 
+if (window.trustedTypes && window.trustedTypes.createPolicy && !window.trustedTypes.defaultPolicy) {
+    window.trustedTypes.createPolicy('default', {
+        createHTML: string => string
+        // Optional, only needed for script (url) tags
+        //,createScriptURL: string => string
+        //,createScript: string => string,
+    });
+}
 let style = document.createElement('style');
 style.innerHTML = `
 yt-icon g path[fill="#FF0033"], yt-icon g circle[fill="#FF0033"], yt-icon path[fill="#f03"] {
