@@ -1,3 +1,5 @@
+**Make YouTube Red Again!**
+
 If you, like me, don't like YouTube's new pink accent color, this script will help you bring back the simple red color to almost all elements.
 
 To install this script you first need to install [Tampermonkey](https://www.tampermonkey.net)
