@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Make YouTube Red Again
-// @version      1.0
+// @version      1.1
 // @description  Removes YouTube's pink accent almost everywhere
 // @author       MAZUTA
 // @match        https://www.youtube.com/*
@@ -31,7 +31,9 @@ ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-
 .YtProgressBarLineProgressBarPlayedRefresh,
 .YtProgressBarPlayheadProgressBarPlayheadDot,
 .badge-shape-wiz--thumbnail-live,
-.yt-spec-icon-badge-shape--type-notification-refresh .yt-spec-icon-badge-shape__badge {
+.yt-spec-icon-badge-shape--type-notification-refresh .yt-spec-icon-badge-shape__badge,
+.ytp-cairo-refresh .ytp-settings-button.ytp-hd-quality-badge::after,
+.ytp-cairo-refresh .ytp-menuitem[aria-checked=true] .ytp-menuitem-toggle-checkbox {
     background: #F00 !important;
 }
 
