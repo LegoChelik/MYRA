@@ -1,8 +1,10 @@
 // ==UserScript==
 // @name         Make YouTube Red Again
-// @version      1.1.2
+// @version      1.2
 // @description  Removes YouTube's pink accent almost everywhere
 // @author       MAZUTA
+// @downloadURL  https://github.com/LegoChelik/MYRA/raw/main/main.user.js
+// @updateURL    https://github.com/LegoChelik/MYRA/raw/main/main.user.js
 // @match        https://www.youtube.com/*
 // @icon         https://i.imgur.com/rYfrwQn.png
 // ==/UserScript==
@@ -32,15 +34,8 @@ ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-
 .YtProgressBarPlayheadProgressBarPlayheadDot,
 .badge-shape-wiz--thumbnail-live,
 .yt-spec-icon-badge-shape--type-notification-refresh .yt-spec-icon-badge-shape__badge,
-.ytp-cairo-refresh .ytp-settings-button.ytp-hd-quality-badge::after,
-.ytp-cairo-refresh .ytp-settings-button.ytp-hdr-quality-badge::after,
-.ytp-cairo-refresh .ytp-settings-button.ytp-4k-quality-badge::after,
-.ytp-cairo-refresh .ytp-settings-button.ytp-5k-quality-badge::after,
-.ytp-cairo-refresh .ytp-settings-button.ytp-8k-quality-badge::after,
-.ytp-cairo-refresh .ytp-settings-button.ytp-3d-badge-grey::after,
-.ytp-cairo-refresh .ytp-settings-button.ytp-3d-badge::after,
 .ytp-cairo-refresh .ytp-menuitem[aria-checked=true] .ytp-menuitem-toggle-checkbox {
-    background-color: #F00 !important;
+    background: #F00 !important;
 }
 
 .guide-entry-badge.ytd-guide-entry-renderer {
@@ -49,6 +44,16 @@ ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-
 
 .yt-spec-icon-badge-shape--style-overlay.yt-spec-icon-badge-shape--type-cart-refresh .yt-spec-icon-badge-shape__badge {
     color: #fff !important;
+}
+
+.ytp-cairo-refresh .ytp-settings-button.ytp-hd-quality-badge::after,
+.ytp-cairo-refresh .ytp-settings-button.ytp-hdr-quality-badge::after,
+.ytp-cairo-refresh .ytp-settings-button.ytp-4k-quality-badge::after,
+.ytp-cairo-refresh .ytp-settings-button.ytp-5k-quality-badge::after,
+.ytp-cairo-refresh .ytp-settings-button.ytp-8k-quality-badge::after,
+.ytp-cairo-refresh .ytp-settings-button.ytp-3d-badge-grey::after,
+.ytp-cairo-refresh .ytp-settings-button.ytp-3d-badge::after {
+    background-color: #F00 !important;
 }
 `;
 document.head.appendChild(style);
