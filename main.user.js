@@ -52,7 +52,8 @@ ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-
 .ytp-cairo-refresh .ytp-settings-button.ytp-5k-quality-badge::after,
 .ytp-cairo-refresh .ytp-settings-button.ytp-8k-quality-badge::after,
 .ytp-cairo-refresh .ytp-settings-button.ytp-3d-badge-grey::after,
-.ytp-cairo-refresh .ytp-settings-button.ytp-3d-badge::after {
+.ytp-cairo-refresh .ytp-settings-button.ytp-3d-badge::after,
+.ytp-cairo-refresh .ytp-chrome-controls .ytp-button[aria-pressed]::after {
     background-color: #F00 !important;
 }
 `;
