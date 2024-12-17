@@ -34,7 +34,8 @@ ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-
 .YtProgressBarPlayheadProgressBarPlayheadDot,
 .badge-shape-wiz--thumbnail-live,
 .yt-spec-icon-badge-shape--type-notification-refresh .yt-spec-icon-badge-shape__badge,
-.ytp-cairo-refresh .ytp-menuitem[aria-checked=true] .ytp-menuitem-toggle-checkbox {
+.ytp-cairo-refresh .ytp-menuitem[aria-checked=true] .ytp-menuitem-toggle-checkbox,
+.ytProgressBarLineProgressBarPlayedRefresh {
     background: #F00 !important;
 }
 
