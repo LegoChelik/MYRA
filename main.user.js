@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Make YouTube Red Again
-// @version      1.2.4
+// @version      1.2.5
 // @description  Removes YouTube's pink accent almost everywhere
 // @author       MAZUTA
 // @downloadURL  https://github.com/LegoChelik/MYRA/raw/main/main.user.js
@@ -34,7 +34,7 @@ ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-
 .YtProgressBarPlayheadProgressBarPlayheadDot,
 .badge-shape-wiz--thumbnail-live,
 .yt-spec-icon-badge-shape--type-notification-refresh .yt-spec-icon-badge-shape__badge,
-.ytp-cairo-refresh .ytp-menuitem[aria-checked=true] .ytp-menuitem-toggle-checkbox,
+.ytp-menuitem[aria-checked=true] .ytp-menuitem-toggle-checkbox,
 .ytProgressBarLineProgressBarPlayedRefresh,
 .ytProgressBarPlayheadProgressBarPlayheadDot,
 .ytThumbnailOverlayProgressBarHostWatchedProgressBarSegmentModern  {
@@ -49,14 +49,14 @@ ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-
     color: #fff !important;
 }
 
-.ytp-cairo-refresh .ytp-settings-button.ytp-hd-quality-badge::after,
-.ytp-cairo-refresh .ytp-settings-button.ytp-hdr-quality-badge::after,
-.ytp-cairo-refresh .ytp-settings-button.ytp-4k-quality-badge::after,
-.ytp-cairo-refresh .ytp-settings-button.ytp-5k-quality-badge::after,
-.ytp-cairo-refresh .ytp-settings-button.ytp-8k-quality-badge::after,
-.ytp-cairo-refresh .ytp-settings-button.ytp-3d-badge-grey::after,
-.ytp-cairo-refresh .ytp-settings-button.ytp-3d-badge::after,
-.ytp-cairo-refresh .ytp-chrome-controls .ytp-button[aria-pressed]::after {
+.ytp-settings-button.ytp-hd-quality-badge::after,
+.ytp-settings-button.ytp-hdr-quality-badge::after,
+.ytp-settings-button.ytp-4k-quality-badge::after,
+.ytp-settings-button.ytp-5k-quality-badge::after,
+.ytp-settings-button.ytp-8k-quality-badge::after,
+.ytp-settings-button.ytp-3d-badge-grey::after,
+.ytp-settings-button.ytp-3d-badge::after,
+.ytp-chrome-controls .ytp-button[aria-pressed]::after {
     background-color: #F00 !important;
 }
 `;
