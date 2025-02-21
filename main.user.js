@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Make YouTube Red Again
-// @version      1.2.6
+// @version      1.2.7
 // @description  Removes YouTube's pink accent almost everywhere
 // @author       MAZUTA
 // @downloadURL  https://github.com/LegoChelik/MYRA/raw/main/main.user.js
@@ -19,7 +19,7 @@ if (window.trustedTypes && window.trustedTypes.createPolicy && !window.trustedTy
 }
 let style = document.createElement('style');
 style.innerHTML = `
-yt-icon g path[fill="#FF0033"], yt-icon g circle[fill="#FF0033"], yt-icon path[fill="#f03"] {
+yt-icon g path[fill="#FF0033"], yt-icon g circle[fill="#FF0033"], yt-icon path[fill="#f03"], .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button-bg {
     fill: #FF0000 !important;
 }
 
@@ -34,7 +34,7 @@ ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-
 .YtProgressBarPlayheadProgressBarPlayheadDot,
 .badge-shape-wiz--thumbnail-live,
 .yt-spec-icon-badge-shape--type-notification-refresh .yt-spec-icon-badge-shape__badge,
-.ytp-menuitem[aria-checked=true] .ytp-menuitem-toggle-checkbox,
+.ytp-settings-menu .ytp-menuitem[aria-checked=true] .ytp-menuitem-toggle-checkbox,
 .ytProgressBarLineProgressBarPlayed,
 .ytProgressBarPlayheadProgressBarPlayheadDot,
 .ytThumbnailOverlayProgressBarHostWatchedProgressBarSegmentModern  {
