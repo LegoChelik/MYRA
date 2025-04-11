@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Make YouTube Red Again
-// @version      1.2.8
+// @version      1.2.9
 // @description  Removes YouTube's pink accent almost everywhere
 // @author       MAZUTA
 // @downloadURL  https://github.com/LegoChelik/MYRA/raw/main/main.user.js
@@ -33,7 +33,7 @@ yt-icon g path[fill="#FF0033"], yt-icon g circle[fill="#FF0033"], yt-icon path[f
 .YtProgressBarLineProgressBarPlayedRefresh,
 .YtProgressBarPlayheadProgressBarPlayheadDot,
 .badge-shape-wiz--thumbnail-live,
-.yt-spec-icon-badge-shape--type-notification-refresh .yt-spec-icon-badge-shape__badge,
+.yt-spec-icon-badge-shape--type-notification .yt-spec-icon-badge-shape__badge,
 .ytp-settings-menu .ytp-menuitem[aria-checked=true] .ytp-menuitem-toggle-checkbox,
 .ytProgressBarLineProgressBarPlayed,
 .ytProgressBarPlayheadProgressBarPlayheadDot,
