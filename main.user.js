@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Make YouTube Red Again
-// @version      1.2.9
+// @version      1.2.10
 // @description  Removes YouTube's pink accent almost everywhere
 // @author       MAZUTA
 // @downloadURL  https://github.com/LegoChelik/MYRA/raw/main/main.user.js
@@ -12,13 +12,14 @@
 if (window.trustedTypes && window.trustedTypes.createPolicy && !window.trustedTypes.defaultPolicy) {
     window.trustedTypes.createPolicy('default', {
         createHTML: string => string
-        // Optional, only needed for script (url) tags
-        //,createScriptURL: string => string
-        //,createScript: string => string,
     });
 }
 let style = document.createElement('style');
 style.innerHTML = `
+#related ytd-channel-renderer {
+    display: none !important;
+}
+
 yt-icon g path[fill="#FF0033"], yt-icon g circle[fill="#FF0033"], yt-icon path[fill="#f03"], .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button-bg {
     fill: #FF0000 !important;
 }
@@ -66,3 +67,4 @@ let links = document.querySelectorAll("link[rel~='icon']");
 for (let i = 0; i < links.length; i++){
     links[i].href = 'https://i.imgur.com/rYfrwQn.png';
 }
+
